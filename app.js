@@ -8,7 +8,7 @@ const app = express();
 const port = 5000;
 
 app.set("view engine", "ejs");
-mongoose.set("strictQuery", true);
+mongoose.set("strictQuery", false);
 app.use(urlencoded({ extended: true }));
 app.use(express.static("public"));
 
